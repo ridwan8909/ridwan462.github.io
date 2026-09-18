@@ -190,3 +190,33 @@ footer{
   color:var(--muted);
   margin-top:7px;
 }
+
+/* ============================================================
+   8) TAB SEMESTER
+   ============================================================ */
+.semtabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:24px;
+}
+.semtab{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:0.82rem;
+  padding:9px 16px;
+  background:var(--panel);
+  color:var(--muted);
+  border:1px solid var(--rail);
+  border-radius:999px;
+  cursor:pointer;
+  transition:border-color .15s, color .15s;
+}
+.semtab:hover{ color:var(--ink); border-color:var(--lamp); }
+.semtab.is-active{
+  color:var(--paper);
+  background:var(--ink);
+  border-color:var(--ink);
+}
+
+.sempanel{ display:none; }
+.sempanel.is-active{ display:block; }
